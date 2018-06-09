@@ -75,7 +75,7 @@ namespace Ui
             this.nameTextBox.DataBindings.Add("Text", soldier, "Name");
             this.surname.DataBindings.Add("Text", soldier, "Surname");
             this.patronomic.DataBindings.Add("Text", soldier, "Patronymic");
-            this.birthDate.DataBindings.Add("Value", soldier, "BirthDay");
+            this.birthDate.DataBindings.Add("Value", soldier, "BirthDate");
             this.character.DataBindings.Add("Text", soldier, "Character");
             this.attitudeServiceTextBox.DataBindings.Add("Text", soldier, "ServiceAttitude");
 

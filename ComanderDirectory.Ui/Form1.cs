@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 using ClassLibrary1;
 using ClassLibrary1.Models;
@@ -38,6 +39,7 @@ namespace Ui
             comanderDirectory = new CommanderDirectory();
 
             sourceType.DataSource = sourceTypes;
+            sourceType.SelectedIndexChanged += this.sourceType_SelectedIndexChanged;
         }
 
         private void InitGrouping()
@@ -171,9 +173,7 @@ namespace Ui
 
         private void sourceType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LoadSoldiers();
-            
-            var selectedSourceType = sourceType.SelectedItem.ToString();
+            var selectedSourceType = sourceType.SelectedItem.ToString(); 
             if (selectedSourceType == "Усі")
             {
                 EnableServiceSearchTextboxes(true);
@@ -195,6 +195,7 @@ namespace Ui
                 groupByComboBox.DataSource = new BindingSource(soldierGroupByDictionary, null);
                 InitGroupByComboboxMembers();
             }
+            LoadSoldiers();
         }
 
         private void InitGroupByComboboxMembers()

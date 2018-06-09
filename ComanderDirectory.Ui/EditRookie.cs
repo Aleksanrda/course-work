@@ -56,7 +56,6 @@ namespace Ui
             type = SaveType;
             this.Text = "Додати новобранця";
             SaveButton.Text = "Додати";
-
             InitRookieTextBoxes();
         }
 
@@ -82,7 +81,7 @@ namespace Ui
             this.nameTextBox.DataBindings.Add("Text", rookie, "Name");
             this.Surname.DataBindings.Add("Text", rookie, "Surname");
             this.Patronic.DataBindings.Add("Text", rookie, "Patronymic");
-            this.birthData.DataBindings.Add("Value", rookie, "Age");
+            this.birthData.DataBindings.Add("Value", rookie, "BirthDate");
             this.CharacterTextbox.DataBindings.Add("Text", rookie, "Character");
 
             this.CityTextBox.DataBindings.Add("Text", rookie, "ParentAdress.City");

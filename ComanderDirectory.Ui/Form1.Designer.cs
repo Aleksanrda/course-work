@@ -354,7 +354,6 @@
             this.sourceType.Name = "sourceType";
             this.sourceType.Size = new System.Drawing.Size(151, 21);
             this.sourceType.TabIndex = 3;
-            this.sourceType.SelectedIndexChanged += new System.EventHandler(this.sourceType_SelectedIndexChanged);
             // 
             // searchSurnameTextBox
             // 

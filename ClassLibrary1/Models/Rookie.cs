@@ -24,27 +24,21 @@ namespace ClassLibrary1.Models
 
         public DateTime BirthDate { get; set; } = DateTime.MinValue;
 
-        private int age;
         public int Age
         {
             get
             {
-                return age;
-            }
-            set
-            {
-                age = today.Year - BirthDate.Year;
+                int age = today.Year - BirthDate.Year;
 
                 if (today.Month < BirthDate.Month || (today.Month == BirthDate.Month && today.Day < BirthDate.Day))
                 {
                     age--;
                 }
-             
-                   age = value;
-            }
 
+                return age;
+            }
         }
-        
+
 
         public string Character { get; set; }
 
@@ -97,8 +91,8 @@ namespace ClassLibrary1.Models
 
         protected string ValidatePositiveNumberProperty(int? propertyValue, string propertyName)
         {
-            return propertyValue < 1 
-                ? $"{propertyName} не може мати значення менше одного." 
+            return propertyValue < 1
+                ? $"{propertyName} не може мати значення менше одного."
                 : string.Empty;
         }
     }

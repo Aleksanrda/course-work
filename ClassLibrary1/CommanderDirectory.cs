@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -15,8 +16,8 @@ namespace ClassLibrary1
     {
         private List<Soldier> _soldiers;
         private List<Rookie> _rookies;
-        private const string PathToSoldiersFile = "soldiers.txt";
-        private const string PathToRookiesFile = "rookies.txt";
+        private const string PathToSoldiersFile = "Data/soldiers.txt";
+        private const string PathToRookiesFile = "Data/rookies.txt";
 
         public CommanderDirectory()
         {
@@ -560,7 +561,7 @@ namespace ClassLibrary1
             File.WriteAllLines(PathToRookiesFile, fileLines);
 
         }
-        
-        
+
+
     }
 }
