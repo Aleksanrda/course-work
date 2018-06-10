@@ -72,12 +72,12 @@ namespace Ui
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var editForm = new EditSoldier(soldierId);
-            editForm.Show();
-            Close();
-        }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    var editForm = new EditSoldier(soldierId);
+        //    editForm.Show();
+        //    Close();
+        //}
 
 
         private void label19_Click(object sender, EventArgs e)
@@ -97,9 +97,14 @@ namespace Ui
 
         private void EditRookie_Click(object sender, EventArgs e)
         {
-           var editForm = new EditSoldier(soldierId);
+            var editForm = new EditSoldier(soldierId);
             editForm.Show();
             Close();
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

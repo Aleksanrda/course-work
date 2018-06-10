@@ -263,11 +263,11 @@ namespace Ui
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //var soldiersList = SearchSoldiers();
+            var soldiersList = SearchSoldiers();
 
-            //BindSoldiers(soldiersList.ToList());
+            BindSoldiers(soldiersList.ToList());
 
-            //selectGroupComboBox.Enabled = false;
+            selectGroupComboBox.Enabled = false;
         }
 
         private List<SoldierViewModel> SearchSoldiers()

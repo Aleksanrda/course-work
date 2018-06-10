@@ -89,12 +89,11 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 13);
+            this.label4.Size = new System.Drawing.Size(112, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Вік:";
+            this.label4.Text = "Дата народження:";
             // 
             // label5
             // 
@@ -200,21 +199,20 @@
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(12, 388);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(94, 13);
+            this.label16.Size = new System.Drawing.Size(94, 29);
             this.label16.TabIndex = 16;
-            this.label16.Text = "Дата закінчення:";
+            this.label16.Text = "Дата отримання рангу:";
             // 
             // NameRookie
             // 
             this.NameRookie.AutoSize = true;
             this.NameRookie.Location = new System.Drawing.Point(53, 32);
             this.NameRookie.Name = "NameRookie";
-            this.NameRookie.Size = new System.Drawing.Size(71, 13);
+            this.NameRookie.Size = new System.Drawing.Size(73, 13);
             this.NameRookie.TabIndex = 17;
-            this.NameRookie.Text = "SoldierDetails";
+            this.NameRookie.Text = "RookieDetails";
             // 
             // Surname
             // 
@@ -237,7 +235,7 @@
             // Age
             // 
             this.Age.AutoSize = true;
-            this.Age.Location = new System.Drawing.Point(48, 112);
+            this.Age.Location = new System.Drawing.Point(117, 112);
             this.Age.Name = "Age";
             this.Age.Size = new System.Drawing.Size(16, 13);
             this.Age.TabIndex = 20;

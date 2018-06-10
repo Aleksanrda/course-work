@@ -70,12 +70,13 @@
             this.label24 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.serviceAttitudeText = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // EditRookie
             // 
-            this.EditRookie.Location = new System.Drawing.Point(142, 564);
+            this.EditRookie.Location = new System.Drawing.Point(139, 583);
             this.EditRookie.Name = "EditRookie";
             this.EditRookie.Size = new System.Drawing.Size(75, 23);
             this.EditRookie.TabIndex = 60;
@@ -167,7 +168,7 @@
             // Age
             // 
             this.Age.AutoSize = true;
-            this.Age.Location = new System.Drawing.Point(48, 112);
+            this.Age.Location = new System.Drawing.Point(124, 112);
             this.Age.Name = "Age";
             this.Age.Size = new System.Drawing.Size(16, 13);
             this.Age.TabIndex = 50;
@@ -202,12 +203,11 @@
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(13, 388);
+            this.label16.Location = new System.Drawing.Point(10, 388);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(94, 13);
+            this.label16.Size = new System.Drawing.Size(94, 29);
             this.label16.TabIndex = 46;
-            this.label16.Text = "Дата закінчення:";
+            this.label16.Text = "Дата отримання рангу:";
             // 
             // label15
             // 
@@ -313,12 +313,11 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 112);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 13);
+            this.label4.Size = new System.Drawing.Size(106, 25);
             this.label4.TabIndex = 34;
-            this.label4.Text = "Вік:";
+            this.label4.Text = "Дата народження";
             // 
             // label2
             // 
@@ -359,83 +358,92 @@
             // 
             // postText
             // 
-            this.postText.Location = new System.Drawing.Point(12, 440);
+            this.postText.Location = new System.Drawing.Point(77, 440);
             this.postText.Name = "postText";
-            this.postText.Size = new System.Drawing.Size(46, 23);
+            this.postText.Size = new System.Drawing.Size(74, 23);
             this.postText.TabIndex = 62;
-            this.postText.Text = "Посада";
+            this.postText.Text = "-";
             // 
             // subdivisionText
             // 
-            this.subdivisionText.Location = new System.Drawing.Point(12, 463);
+            this.subdivisionText.Location = new System.Drawing.Point(77, 463);
             this.subdivisionText.Name = "subdivisionText";
             this.subdivisionText.Size = new System.Drawing.Size(100, 18);
             this.subdivisionText.TabIndex = 63;
-            this.subdivisionText.Text = "Підрозділ";
+            this.subdivisionText.Text = "-";
             this.subdivisionText.Click += new System.EventHandler(this.label18_Click);
             // 
             // formServiceText
             // 
-            this.formServiceText.Location = new System.Drawing.Point(13, 490);
+            this.formServiceText.Location = new System.Drawing.Point(112, 490);
             this.formServiceText.Name = "formServiceText";
             this.formServiceText.Size = new System.Drawing.Size(100, 23);
             this.formServiceText.TabIndex = 64;
-            this.formServiceText.Text = "Форма служби";
+            this.formServiceText.Text = "-";
             this.formServiceText.Click += new System.EventHandler(this.label19_Click);
             // 
             // periodServiceText
             // 
-            this.periodServiceText.Location = new System.Drawing.Point(13, 513);
+            this.periodServiceText.Location = new System.Drawing.Point(112, 513);
             this.periodServiceText.Name = "periodServiceText";
-            this.periodServiceText.Size = new System.Drawing.Size(100, 23);
+            this.periodServiceText.Size = new System.Drawing.Size(121, 36);
             this.periodServiceText.TabIndex = 65;
-            this.periodServiceText.Text = "Період служби";
+            this.periodServiceText.Text = "-";
             this.periodServiceText.Click += new System.EventHandler(this.label20_Click);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(64, 440);
+            this.label21.Location = new System.Drawing.Point(10, 440);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(10, 13);
+            this.label21.Size = new System.Drawing.Size(48, 13);
             this.label21.TabIndex = 66;
-            this.label21.Text = "-";
+            this.label21.Text = "Посада:";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(80, 463);
+            this.label22.Location = new System.Drawing.Point(10, 463);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(10, 13);
+            this.label22.Size = new System.Drawing.Size(58, 13);
             this.label22.TabIndex = 67;
-            this.label22.Text = "-";
+            this.label22.Text = "Підрозділ:";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(101, 490);
+            this.label23.Location = new System.Drawing.Point(9, 491);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(10, 13);
+            this.label23.Size = new System.Drawing.Size(87, 13);
             this.label23.TabIndex = 68;
-            this.label23.Text = "-";
+            this.label23.Text = "Форма служби:";
+            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(101, 513);
+            this.label24.Location = new System.Drawing.Point(8, 513);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(10, 13);
+            this.label24.Size = new System.Drawing.Size(84, 13);
             this.label24.TabIndex = 69;
-            this.label24.Text = "-";
+            this.label24.Text = "Період служби:";
             // 
             // serviceAttitudeText
             // 
-            this.serviceAttitudeText.AutoSize = true;
-            this.serviceAttitudeText.Location = new System.Drawing.Point(12, 536);
+            this.serviceAttitudeText.Location = new System.Drawing.Point(136, 540);
             this.serviceAttitudeText.Name = "serviceAttitudeText";
-            this.serviceAttitudeText.Size = new System.Drawing.Size(121, 13);
+            this.serviceAttitudeText.Size = new System.Drawing.Size(142, 31);
             this.serviceAttitudeText.TabIndex = 70;
-            this.serviceAttitudeText.Text = "Відношення до служби";
+            this.serviceAttitudeText.Text = "-";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(9, 540);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(124, 13);
+            this.label17.TabIndex = 71;
+            this.label17.Text = "Відношення до служби:";
             // 
             // SoldierDetails
             // 
@@ -443,6 +451,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(355, 608);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.serviceAttitudeText);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label23);
@@ -534,5 +543,6 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Label serviceAttitudeText;
+        private System.Windows.Forms.Label label17;
     }
 }
